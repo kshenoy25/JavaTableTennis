@@ -11,7 +11,7 @@ public class GameFrame extends JFrame {
     GameFrame(){
         panel = new GamePanel();
         this.add(panel);
-        this.setTitle("Ping Pong Gane");
+        this.setTitle("Ping Pong Game");
         this.setResizable(false);
         this.setBackground(Color.black);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,7 +19,10 @@ public class GameFrame extends JFrame {
         // The resulting width and height of the window are automatically enlarged if either of dimensions is
         // less than the minimum size as specified by the previous call to the setMinimumSize method
         this.pack();
-        setVisible(true);
+        this.setVisible(true);
+
+        // sets frame to the middle of the screen
+        this.setLocationRelativeTo(null);
 
 
     }
